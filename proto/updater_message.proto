@@ -1,6 +1,6 @@
 import "updater.proto";
 package kkm.fd_svc.proto;
-option java_package = "org.epicsquad.kkm.updateserver.proto";
+option java_package = "kz.kgdkkmproto.kkm.updateserver.proto";
 
 enum RequestTypeEnum {
   REQUEST_CHECK_UPDATES      = 1;
