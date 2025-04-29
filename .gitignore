@@ -1,35 +1,56 @@
+# === Java artifacts ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Build ===
+/build/
+/out/
+/.gradle/
+
+# === IntelliJ IDEA / Android Studio ===
+.idea/
+*.iml
+*.iws
+
+# === Logs ===
+*.log
+hs_err_pid*
+replay_pid*
+
 # === OS-specific ===
 .DS_Store
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# === IDEs ===
-.idea/
-*.iml
+# === VS Code ===
 .vscode/
-.gradle/
 
-# === Backups & temp ===
-*.swp
-*.bak
+# === Gradle Wrapper ===
+!gradle/wrapper/gradle-wrapper.jar
+
+# === Protobuf-generated files ===
+build/generated/
+proto-generated/
+
+# === Temp & backups ===
 *.tmp
+*.bak
+*.swp
 *.orig
 
-# === Build artifacts ===
-build/
-out/
-gen/
-generated/
-*.pb.cc
-*.pb.h
-*.pb.go
-*.pb.java
-*.pb.swift
+# === Kotlin module info ===
+*.kotlin_module
 
-# === MkDocs build dir ===
-site/
+# === Local config ===
+local.properties
 
-# === Python cache ===
-__pycache__/
-*.pyc
+# === Dev container ===
+.devcontainer/
+
+# Gradle Cache and Reports
+**/.gradle/
+**/build/
+**/out/

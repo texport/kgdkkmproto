@@ -10,6 +10,7 @@ version = "2.0.2"
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
     withSourcesJar()
+    modularity.inferModulePath.set(true)
 }
 
 repositories {
@@ -18,10 +19,6 @@ repositories {
 
 dependencies {
     implementation("com.google.protobuf:protobuf-java:4.28.2")
-}
-
-sourceSets["main"].proto {
-    srcDir("proto") // ← директория с .proto файлами
 }
 
 protobuf {
